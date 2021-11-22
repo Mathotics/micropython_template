@@ -21,3 +21,9 @@ c) run.bat
 d) run.sh
 
 ## Operating Instructions
+Edit the main.py file to edit the code on the microcontroller. 
+
+use the run file to run the program on the microcontroller
+use the put file to place the program on the microcontroller 
+
+If you are using Windows, use the .bat extension. If you are using linux, use the .sh extensions.
