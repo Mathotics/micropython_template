@@ -1,5 +1,5 @@
 # Micropython_template
-This template is for programming microcontrollers using micropython.
+Template for programming microcontrollers using micropython.
 
 ## First-time Setup Instructions
 If this is your first time using micropython, follow these steps:
