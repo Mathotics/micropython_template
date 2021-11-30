@@ -3,7 +3,11 @@ import _thread # Required for starting another thread
 import machine # Required for accessing the pins of the raspberry pi pico
 
 '''
-NOTE: It appears that you cannot have more than one thread at a time
+NOTE: From testing, it appears that you cannot have more than one thread at a time
+
+From the manual,
+Only one thread can be started/running at any one time, because there is no RTOS just a second core. The GIL is not
+enabled so both core0 and core1 can run Python code concurrently, with care to use locks for shared data.
 '''
 
 def blink(n, delay):
@@ -22,4 +26,4 @@ def send_messages(n, message, delay):
 
 # If this works as expected, we should see blinking and the "Hello World" message appear at the same time
 _thread.start_new_thread(blink, (10, 0.5))
-send_messages(10, "Hello World", 0.5)
+send_messages(10, "Hello World", 0.25)
