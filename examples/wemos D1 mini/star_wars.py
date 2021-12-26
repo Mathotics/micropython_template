@@ -23,3 +23,5 @@ while True:
     print(str(data, 'utf8'), end='')
     if data == "\0":
         break
+
+s.close() # Close the socket
