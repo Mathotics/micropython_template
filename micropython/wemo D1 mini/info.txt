@@ -1,2 +1,4 @@
 baud rate: 115200
 rept ip: 192.168.4.1
+
+tutorial: https://docs.micropython.org/en/latest/esp8266/tutorial/repl.html
